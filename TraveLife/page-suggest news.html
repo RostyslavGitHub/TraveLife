@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TraveLife</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<link rel="icon" type="image" href="img/icons/backpack.png">
+	</head>
+
+	<body>
+<div class="wrapper">
+	<header class="header">
+		<nav class="header__nav">
+			<div class="header__menu">
+				<p><a href="index.html" class="header__logo"><img src="img/icons/backpack.png" alt=""></a></p>
+				<div class="menu__icon ">
+					<span class="burger-line1"></span>
+					<span class="burger-line2"></span>
+					<span class="burger-line3"></span>
+					<span class="burger-line4"></span>
+				</div>
+			</div>
+			<div class="menu">
+				<a href="#up" class="scroll-up">
+					<div class="arrow-up"></div>
+					<div class="line-up"></div>
+				</a>
+				<ul>
+					<li><a href="index.html#content">Blogs</a></li>
+					<li><div class="submenu-opener">Our trips <img src="img/icons/down.svg" width="16px"  alt=""></div>
+						<ul class="submenu">
+							<li><a href="theme pages/page-europe.html#content">Europe</a></li>
+							<li><a href="theme pages/page-asia.html#content">Asia</a></li>
+							<li><a href="theme pages/page-africa.html#content">Africa</a></li>
+							<li><a href="theme pages/page-americas.html#content">Americas</a></li></li>
+						</ul>
+					<li><a href="#about__popup">About the developer</a></li>
+					<li><a href="index.html">Go back</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<div class="suggest-news-content-grid">
+		<main class="suggest-news">
+			<div class="suggest-news__info">
+				<h1 class="suggest-news__info__title">Here you can send us news</h1>
+				<div class="suggest-news__info__text">
+					<p >Our team publishes news about traveling and tourism.</p>
+					<p>Check the punctuation of any news you send - this will make our lives easier. To pin a file, use a third-party file sharing service.</p>
+				</div>
+			</div>
+
+			<form action="#suggest-news__popuptwo" data-netlify="true">
+				<div class="suggest-news__email">Your e-mail</div>
+				<input class="form__input" type="email" name="mail:">
+				<div class="suggest-news__text">News text</div>
+				<textarea class="form__input" type="text" name="user post:"></textarea>
+				<button class="form__button">Send</button>
+			</form>
+
+		</main>	 
+	</div>
+
+</div>
+
+<footer class="footer">
+	<div class="footer__text">
+		Made by Rostislav <img src="img/icons/folder.svg" alt="">
+	</div>
+</footer>
+
+<div class="about__popup" id="about__popup">
+	<a href="##" class="popup__area"></a>
+	<div class="about__popup__body">
+		<div class="about__popup__content">
+			<div class="flex-end">
+				<a href="##" class="popup__close about__popup__close">
+					╳
+				</a>
+			</div>
+			<div class="popup__title">Hi, I'm Rostyslav</div>
+			<div class="popup__text">
+			this site was made by me 
+				<ul>
+			        <li>I know:</li>
+			        <li>English B2</li>
+			        <li>HTML and CSS</li>
+			        <li>JavaScript</li>
+			        <li>BEM methology</li>
+			        <li>Adaptive/responsive design</li>
+			        <li>Cross-browser compatibility</li>
+			      </ul>
+  			</div>
+	      	<div class="socmedia__row">
+				<div class="grey-bg"> <a href="mailto:forwork.rostislav@gmail.com"><img src="img/icons/mail.svg" alt=""></a></div>
+	           <div class="grey-bg"><a href="https://github.com/RostyslavGitHub"><img src="img/icons/github-sign.svg" alt=""></a></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="suggest-news__popuptwo" class="popup__two">
+	<a href="##" class="popup__area"></a>
+	<div class="popuptwo__body">
+		<div class="popuptwo__content">
+			<div class="flex-end">
+				<a href="##" class="popup__close">
+					╳
+				</a>
+			</div>
+			<div class="popup__title">Thank You</div>
+			<div class="popup__text">If we like it, it'll be on the site!</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/script.js"></script>
+	</body>
+</html>
