@@ -22,10 +22,6 @@
 				</div>
 			</div>
 			<div class="menu">
-				<a href="#up" class="scroll-up">
-					<div class="arrow-up"></div>
-					<div class="line-up"></div>
-				</a>
 				<ul>
 					<li><a href="index.html#content">Blogs</a></li>
 					<li><div class="submenu-opener">Our trips <img src="img/icons/down.svg" width="16px"  alt=""></div>
@@ -41,34 +37,35 @@
 			</div>
 		</nav>
 	</header>
-	<div class="suggest-news-content-grid">
-		<main class="suggest-news">
-			<div class="suggest-news__info">
-				<h1 class="suggest-news__info__title">Here you can send us news</h1>
-				<div class="suggest-news__info__text">
-					<p >Our team publishes news about traveling and tourism.</p>
-					<p>Check the punctuation of any news you send - this will make our lives easier. To pin a file, use a third-party file sharing service.</p>
+
+	<div class="close_area">
+		<div class="suggest-news-content-grid">
+			<main class="suggest-news">
+				<div class="suggest-news__info">
+					<h1 class="suggest-news__info__title">Here you can send us news</h1>
+					<div class="suggest-news__info__text">
+						<p >Our team publishes news about traveling and tourism.</p>
+						<p>Check the punctuation of any news you send - this will make our lives easier. To pin a file, use a third-party file sharing service.</p>
+					</div>
 				</div>
+
+				<form action="#suggest-news__popuptwo" data-netlify="true">
+					<div class="suggest-news__email">Your e-mail</div>
+					<input class="form__input" type="email" name="mail:">
+					<div class="suggest-news__text">News text</div>
+					<textarea class="form__input" type="text" name="user post:"></textarea>
+					<button class="form__button">Send</button>
+				</form>
+
+			</main>	 
+		</div>
+
+		<footer class="footer">
+			<div class="footer__text">
+				Made by Rostislav <img src="img/icons/folder.svg" alt="">
 			</div>
-
-			<form action="#suggest-news__popuptwo" data-netlify="true">
-				<div class="suggest-news__email">Your e-mail</div>
-				<input class="form__input" type="email" name="mail:">
-				<div class="suggest-news__text">News text</div>
-				<textarea class="form__input" type="text" name="user post:"></textarea>
-				<button class="form__button">Send</button>
-			</form>
-
-		</main>	 
+		</footer>
 	</div>
-
-</div>
-
-<footer class="footer">
-	<div class="footer__text">
-		Made by Rostislav <img src="img/icons/folder.svg" alt="">
-	</div>
-</footer>
 
 <div class="about__popup" id="about__popup">
 	<a href="##" class="popup__area"></a>

@@ -2,23 +2,34 @@
 
 const menu = document.querySelector('.menu');
 const iconMenu = document.querySelector('.menu__icon');
+const menuCloseArea = document.querySelector('.close_area');
+const openSubmenu = document.querySelector('.submenu-opener');
+
 if (iconMenu){
-	
-
 	iconMenu.addEventListener("click", function (e) {
-		menu.classList.toggle('_active-menu');
-	});
 
-		iconMenu.addEventListener("click", function (e) {
-		iconMenu.classList.toggle('_close-menu__icon');
+		menu.classList.toggle('_active-menu');
+		menuCloseArea.classList.toggle('_menu__close-area');
+		iconMenu.classList.toggle('close-menu__icon');
+	
 	});
 }
-	
 
-const openSubmenu = document.querySelector('.submenu-opener');
+if (menuCloseArea){
+	menuCloseArea.addEventListener("click", function (e) {
+  
+		menuCloseArea.classList.remove('_menu__close-area');
+		menu.classList.remove('_active-menu');
+		iconMenu.classList.remove('close-menu__icon');
+
+	});
+}
+
+
 if (openSubmenu){
 	const submenu = document.querySelector('.submenu');
 	openSubmenu.addEventListener("click", function (e) {
+		
 		submenu.classList.toggle('_active-submenu')
 		
 	});
@@ -63,40 +74,24 @@ if (isMobile.any()) {
 
 
 
-let scrollpos = window.scrollY;
-const scrollButton = document.querySelector(".scroll-up");
-let scrollChange = 340;
-const add_class_on_scroll = () => scrollButton.classList.add("_show-scroll-up");
-window.addEventListener('scroll', function() { 
-  scrollpos = window.scrollY;
+const scrUp = document.querySelector('.scroll-up');
+if (scrUp){
+	let scrollpos = window.scrollY;
+	const scrollButton = document.querySelector(".scroll-up");
+	let scrollChange = 340;
+	const add_class_on_scroll = () => scrollButton.classList.add("_show-scroll-up");
+	window.addEventListener('scroll', function() { 
+	  scrollpos = window.scrollY;
 
-  if (scrollpos >= scrollChange) { add_class_on_scroll(); }
-});
-
-const remove_class_on_scroll = () => scrollButton.classList.remove("_show-scroll-up");
-window.addEventListener('scroll', function() { 
-  scrollpos = window.scrollY;
-
-  if (scrollpos >= scrollChange) { add_class_on_scroll(); }
-  else { remove_class_on_scroll(); }
-  
-});
-
-const menuCloseArea = document.querySelector('._menu__close-area');
-const wrapper = document.querySelector('.wrapper');
-if (wrapper){
-	iconMenu.addEventListener("click", function (e) {
-		wrapper.classList.toggle('_menu__close-area');
+	  if (scrollpos >= scrollChange) { add_class_on_scroll(); }
 	});
-}
 
+	const remove_class_on_scroll = () => scrollButton.classList.remove("_show-scroll-up");
+	window.addEventListener('scroll', function() { 
+	  scrollpos = window.scrollY;
 
-
-if (menuCloseArea){
-	menuCloseArea.addEventListener("click", function (e) {
-  
-		menu.classList.remove('_active-menu');
-
-		iconMenu.classList.remove('_close-menu__icon');
+	  if (scrollpos >= scrollChange) { add_class_on_scroll(); }
+	  else { remove_class_on_scroll(); }
+	  
 	});
 }
