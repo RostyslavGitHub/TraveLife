@@ -525,8 +525,13 @@ body {
   margin: 6px 20px 24px 20px;
   font-size: 18px;
   color: DarkSlateGrey;
-  line-height: 1.2;
+  line-height: 1.4;
 }
+
+.popup__text a{
+  color: #035956;
+}
+
 
 form {
   text-align: left;
@@ -726,6 +731,7 @@ form .form__button  {
 }
 
 /*MEDIA QUERIES*/
+
 @media (min-width: 700px) {
   .item__row {
     display: -webkit-box;
